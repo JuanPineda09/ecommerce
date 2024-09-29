@@ -37,6 +37,16 @@
 .link-menu{
     margin-right: 15px;
 }
+.link-menu:hover{
+    border-bottom: 1px solid #808080;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link-menu.responsive:hover{
+    scale: 110%;
+}
 .link-menu.responsive.burger{
     visibility: hidden;
     width: 0;
@@ -83,6 +93,10 @@
     text-decoration: none;
     color: #808080;
 }
+.btn:hover{
+    Scale: 110%;
+}
+
 
 .section-description{
     width: 100%;
@@ -167,8 +181,10 @@
 .footer{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 100;
 }
 .container-footer{
     width: 40%;
