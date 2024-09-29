@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 .menu{
@@ -10,6 +11,7 @@
     display: flex;
     position: fixed;
     top: 0;
+    box-shadow: 1px 6px 20px #b9b9b9ad;
 }
 .content-menu{
     width: 100%;
@@ -24,9 +26,7 @@
     display: flex;
     justify-content: end;
 }
-.nav-menu{
-    width: 50%;
-}
+
 .container-menu{
     display: flex;
     list-style: none;
@@ -37,12 +37,16 @@
 .link-menu{
     margin-right: 15px;
 }
+.link-menu.responsive.burger{
+    visibility: hidden;
+    width: 0;
+}
 
 
 .section-home{
     width: 100%;
-    height: 92vh;
-    margin-top: 5%;
+    height: 100vh;
+    margin-top: 4%;
 }
 .container-home{
     display: flex;
@@ -93,7 +97,7 @@
 .container-description{
     width: 80%;
     height: 80vh;
-    padding: 5%;
+    padding: 10%;
     background: #00C2D6;
     border-radius: 50px;
     display: flex;
@@ -101,4 +105,282 @@
     justify-content: center;
     align-items: center;
 }
+.box-description{
+    padding: 30px 0;
+}
+.title-description{
+    font-size: 80px;
+    padding-bottom:20px ;
+}
+.parrafo-description{
+    font-size: 20px;
+}
 
+
+
+.section-categories{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00C2D6;
+}
+.container-categories{
+    width: 80%;
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+.content-categories{
+    margin:10px;
+}
+.box-categories{
+    background: #ffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 10px 2px #5251513f;
+}
+.img-categories{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+                  url("Utils/coming\ soon.png");
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    object-fit: cover;
+    background-size: 100%;
+}
+.description-categories{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-footer{
+    width: 40%;
+    height: 40px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .menu{
+        position: relative;
+        height: 60px;
+    }
+    .img-menu{
+        width: 54%;
+        height: 40px;
+    }
+    .container-menu{
+        margin-right: 0px;
+        text-align: center;
+    }
+    .link-menu{
+        width: 20%;
+        height: 40px;
+        margin-right: 0px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .t-home{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .p-home{
+        width: 80%;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .btn{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    
+    .section-home{
+        width: 100%;
+        height: 100vh;
+        margin-top: 0%;
+    } 
+    .container-home{
+        height: 100%;
+    }
+    .container-text-home{
+        height: 100%;
+    }
+
+
+    .section-description{
+        height: 100vh;
+    }
+    .container-description{
+        height: 80vh;
+        padding: 7%;
+    }
+    .title-description{
+        width: 100%;
+        font-size: 60px;
+    }
+    .parrafo-description{
+        font-size: 18px;
+    }
+
+    .section-categories{
+        height: 86vh;
+    }
+    .container-categories{
+        height: 90%;
+    }
+    .box-categories{
+        width: 150px;
+        height: 150px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .link-menu{
+        visibility: hidden;
+    }
+    .link-menu.responsive{
+        visibility: visible;
+    }
+    .link-menu.responsive.burger{
+        visibility: visible;
+        width: 20%;
+    }
+    .img-menu{
+        width: 70%;
+    }
+    
+    .t-home{
+        font-size: 30px;
+    }
+    .p-home{
+        font-size: 15px;
+    }
+
+    .container-description{
+      width: 90%;
+    }
+    .box-description{
+        padding: 20px 0;
+    }
+    .title-description{
+        font-size: 50px;
+        padding-bottom: 1px;
+    }
+    .parrafo-description{
+        font-size: 14px;
+    }
+
+
+    .section-categories{
+        height: 92vh;
+    }
+    .container-categories{
+        height: 60%;
+
+    }
+    .box-categories{
+        width: 110px;
+        height: 110px;
+        flex-direction: column;
+    }
+    .description-categories{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .menu{
+        position: fixed;
+    }
+    .img-menu{
+        margin-left: 10px;
+        justify-content: start;
+    }
+    .btn{
+        visibility: hidden;
+        padding: 0;
+    }
+
+    .container-home{
+        flex-direction: column;
+    }
+    .container-img-home{
+        width: 100%;
+        height: 70vh;
+    }
+    .container-text-home{
+        width: 100%;
+        height: 30vh;
+    }
+    .t-home{
+        font-size: 30px;
+    }
+    .p-home{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+
+    .section-description{
+        height: 42vh;
+    }
+    .container-description{
+        height: 35vh;
+    }    
+    .title-description{
+        font-size: 25px;
+        padding-bottom: 4px;
+    }
+    .parrafo-description{
+        font-size: 10px;
+    }
+    
+
+    .section-categories{
+        height: 40vh;
+    }
+    .container-categories{
+        width: 98%;
+        height: 80%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: start;
+        align-items: center;
+    }
+    .box-categories{
+        width: 100px;
+        height: 100px;
+        flex-direction: column;
+    }
+    .description-categories{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 1400px) {}
